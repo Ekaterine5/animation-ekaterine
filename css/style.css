@@ -1,0 +1,11 @@
+.image-wraper {
+	position: relative;
+	width: 100%;
+}
+.text {
+	position: absolute;
+	top: 105px;
+	right:  100px;
+	color: white;
+	/*size: 22px;*/
+}
