@@ -20,19 +20,32 @@
 
 .owl {
 	height: 100px;
-	animation: owlanimationnew 5s infinite;
+	animation: owlanimation 5s infinite;
 	width: 200px;
+	position: relative;
 
 }
-.bird1 {
-	animation: birdimationnew 5s infinite;
-	height: 700px;
+.birds {
+	animation: birdanimation 5s infinite;
+	height: 600px;
+	position: relative;
+	margin-top: 10px;
+
 }
 
 
+@keyframes birdanimation {
+ 
+	 from {bottom: 0px;}
+ 	 to {bottom: 400px;}
 
-/*
-@keyframes owlanimationnew {
-	from {top: 0px;}
-  	to {top: 200px;}*/
+}
+@keyframes owlanimation {
+
+
+	0% {transform: translateY(0px);}
+	25% {transform: translateY(100px);}
+	50% {transform: translateX(400px)}
+	75% {transform: translateX(800px);}
+	100% {transform: translateX(1400px);}
 }
